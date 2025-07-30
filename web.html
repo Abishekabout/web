@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="web.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">WEB PAGE</div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">About</a></li>
+        <li><a href="#skills">Skill</a></li>
+        <li><a href="#project">Project</a></li>
+        
+      </ul>
+      <a href="https://www.linkedin.com/in/abishek-u-9895a9370" class="hire-me">Hire Me</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="home-left">
+      <h1 class="name">Abishek U</h1>
+      <p class="intro">Hi I am I’m a passionate Web Developer skilled in Java, HTML/CSS, and UI Design. I love building clean, responsive websites and intuitive user interfaces. With a strong foundation in frontend development and creative design, I’m focused on delivering modern and user-friendly web experiences.</p>
+      
+      <h2 class="role"><span class="highlight">Web Developer</span></h2>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/abis_hek1310?igsh=c2dqZDJ5NHVlOTg0"><img src="instagram.png" alt="Instagram" /></a>
+        <a href="https://www.linkedin.com/in/abishek-u-9895a9370"><img src="linkedin.png" alt="LinkedIn" /></a>
+        <a href="https://github.com/Abishek005-Git"><img src="github.png" alt="Git-Hub" /></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="logo.png" alt="Gmail" /></a>
+      </div>
+
+      <div class="buttons">
+        <a href="doc.html" class="btn btn-primary">Document</a>
+        <a href="#" class="btn btn-outline">Download CV</a>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>0</h3>
+          <p>Experiences</p>
+        </div>
+        <div class="stat">
+          <h3>2</h3>
+          <p>Project done</p>
+        </div>
+        <div class="stat">
+          <h3>0</h3>
+          <p>Code Commits</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="home-right">
+      <div class="photo-wrapper">
+        <img src="Abi photo.jpg" alt="Profile Image" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <h2>My Skills</h2>
+    <p class="skills-desc">Here are some technologies and tools I’m good at</p>
+    <div class="skills-container">
+      <div class="skill">
+        <span>HTML <span>70%</span></span>
+        <div class="progress"><div style="width: 70%"></div></div>
+      </div>
+      <div class="skill">
+        <span>CSS <span>60%</span></span>
+        <div class="progress"><div style="width: 60%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Java <span>75%</span></span>
+        <div class="progress"><div style="width: 75%"></div></div>
+      </div>
+      <div class="skill">
+        <span>Figma <span>50%</span></span>
+        <div class="progress"><div style="width: 50%"></div></div>
+      </div>
+    </div>
+  </section>
+  <!-- project -->
+  <section id="Project"class="section">
+   <h2 style="text-align: center;">Project</h2>
+    <a href="Bus booking.pdf" download class="btn">
+  <div class="project-card">
+  <img src="Java.jpeg" alt="Java Project Icon" class="project-icon" />
+  <h3 class="project-title">Bus Booking</h3>
+  <p class="project-description">
+    Developed a Java-based bus ticket booking system with travel date validation limited to one week from booking..
+  </p>
+  <button onclick="showJavaOutput()" class="java-btn">
+    <img src="Java.jpeg" alt="Java Icon" class="btn-icon" />Click and Download Code
+  </button>
+  <p id="java-output" class="output-text" style="display:none;">Output: Download successfully!</p>
+</div>
+<script>
+  function showJavaOutput() {
+    const output = document.getElementById("java-output");
+    output.style.display = "block";
+  }
+</script>
+</a>
+
+ 
+  <!-- project -->
+    <a href="Online Voting System.pdf" download class="btn">
+  <div class="project-card">
+  <img src="Java.jpeg" alt="Java Project Icon" class="project-icon" />
+  <h3 class="project-title">Online Voting System</h3>
+  <p class="project-description">
+    Developed a Java-based online voting application ensuring one-person-one-vote logic and result tallying.
+  </p>
+  <button onclick="showJavaOutput()" class="java-btn">
+    <img src="Java.jpeg" alt="Java Icon" class="btn-icon" />Click and Download Code
+  </button>
+  <p id="java-output" class="output-text" style="display:none;">Output: Download successfully!</p>
+</div>
+<script>
+  function showJavaOutput() {
+    const output = document.getElementById("java-output");
+    output.style.display = "block";
+  }
+</script>
+</a>
+ </section>
+
+</body>
+</html>

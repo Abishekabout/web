@@ -1,0 +1,265 @@
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f0f0f;
+  z-index: 1000;
+  padding: 20px 50px;
+  border-bottom: 1px solid #1a1a1a;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: #fd0404;
+  font-size: 22px;
+  font-weight: bold;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  font-size: 16px;
+  color: #c2c2c2;
+  transition: 0.3s;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff7b00;
+}
+.hire-me {
+  background-color: #fc0505;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+/* Section base */
+.section {
+  padding: 100px 50px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Home Section */
+.home-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 120px;
+}
+.home-left {
+  flex: 1;
+}
+.home-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo-wrapper {
+  background: radial-gradient(#1f1f1f, #0f0f0f);
+  border-radius: 50%;
+  padding: 10px;
+}
+.photo-wrapper img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+/* Text & Buttons */
+.intro {
+  color: #aaa;
+  font-size: 16px;
+}
+.name {
+  font-size: 28px;
+  margin: 10px 0;
+}
+.role {
+  font-size: 38px;
+  font-weight: bold;
+}
+.highlight {
+  color: #ff6a00;
+}
+.social-icons {
+  margin: 15px 0;
+}
+.social-icons a {
+  margin-right: 15px;
+  display: inline-block;
+}
+.social-icons img {
+  width: 24px;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+.social-icons img:hover {
+  filter: brightness(1.2);
+}
+.buttons {
+  margin: 20px 0;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
+}
+.btn-primary {
+  background-color: #fd0303;
+  color: white;
+}
+.btn-outline {
+  border: 1px solid #999;
+  color: #ccc;
+}
+.btn-outline:hover {
+  background-color: #222;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 25px;
+  margin-top: 30px;
+}
+.stat {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 100px;
+}
+.stat h3 {
+  color: #ff0505;
+  font-size: 24px;
+}
+.stat p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Skills Section */
+#skills {
+  text-align: center;
+}
+.skills-desc {
+  margin: 10px auto 40px;
+  color: #aaa;
+}
+.skills-container {
+  max-width: 700px;
+  margin: auto;
+}
+.skill {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.skill span {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.progress {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 10px;
+}
+.progress div {
+  background-color: #ff0000;
+  height: 100%;
+  width: 0%;
+  transition: width 1s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-left, .home-right {
+    width: 100%;
+  }
+  .photo-wrapper img {
+    width: 220px;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+/* Projects Section */
+.project-card {
+  background-color: #120303;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+  width: 300px;
+  margin: 10px;
+}
+
+.project-title {
+  color: #0b0401;
+  font-weight: bold;
+}
+
+.project-icon,
+.btn-icon {
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.java-btn {
+  background-color: #032cf7;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.output-text {
+  color: #ccc;
+  margin-top: 10px;
+}
